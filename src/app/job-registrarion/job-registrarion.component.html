@@ -1,0 +1,155 @@
+<article class="col-8 m-auto m-3">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <div class="mb-3">
+      <label for="name" class="form-label">Enter name</label>
+      <input
+        name="name"
+        type="text"
+        ngModel
+        placeholder="Enter name"
+        class="form-control"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="surName" class="form-label">Enter surName</label>
+      <input
+        name="surName"
+        type="text"
+        ngModel
+        placeholder="Enter surName"
+        class="form-control"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Enter email</label>
+      <input
+        name="email"
+        type="email"
+        ngModel
+        placeholder="Enter email"
+        class="form-control"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="number" class="form-label">Enter personal number</label>
+      <input
+        name="number "
+        type="number"
+        ngModel
+        placeholder="Enter personal number"
+        class="form-control"
+      />
+    </div>
+    <div ngModelGroup="job">
+      <div class="mb-3">
+        <label for="companyName" class="form-label">Enter companyName</label>
+        <input
+          name="companyName"
+          type="text"
+          ngModel
+          placeholder="Enter companyName"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="position" class="form-label">Enter position</label>
+        <input
+          name="position"
+          type="text"
+          ngModel
+          placeholder="Enter position"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="start-year" class="form-label">Enter start-year</label>
+        <input
+          name="start-year"
+          type="date"
+          ngModel
+          placeholder="Enter start-year"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="end-year" class="form-label">Enter end-year</label>
+        <input
+          name="end-year"
+          type="date"
+          ngModel
+          placeholder="Enter end-year"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <!-- address country city str -->
+    <div ngModelGroup="address">
+      <div class="mb-3">
+        <label for="country" class="form-label">Enter country</label>
+        <input
+          name="country"
+          type="text"
+          ngModel
+          placeholder="Enter country"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="city" class="form-label">Enter city</label>
+        <input
+          name="city"
+          type="text"
+          ngModel
+          placeholder="Enter city"
+          class="form-control"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="str" class="form-label">Enter str</label>
+        <input
+          name="str"
+          type="text"
+          ngModel
+          placeholder="Enter str"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <!-- family member -->
+    <div ngModelGroup="familyMember">
+      <div ngModelGroup="mother">
+        <div class="mb-3">
+          <label for="name" class="form-label">Enter name</label>
+          <input
+            name="name"
+            type="text"
+            ngModel
+            placeholder="Enter name"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Enter email</label>
+          <input
+            name="email"
+            type="text"
+            ngModel
+            placeholder="Enter email"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Enter phone number</label>
+          <input
+            name="number "
+            type="number"
+            ngModel
+            placeholder="Enter phone number"
+            class="form-control"
+          />
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="col-12 btn btn-dark">submit</button>
+  </form>
+</article>

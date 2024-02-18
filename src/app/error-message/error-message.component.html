@@ -1,0 +1,6 @@
+<div
+  *ngIf="form.controls[controlName]?.touched && form.controls[controlName].errors?.['pattern'] != undefined"
+  class="form-text error-message"
+>
+  Input Format is invalid
+</div>

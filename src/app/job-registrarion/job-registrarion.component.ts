@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-job-registrarion',
@@ -8,6 +9,12 @@ import { NgForm } from '@angular/forms';
 })
 export class JobRegistrarionComponent {
   onSubmit(ngForm: NgForm) {
-    console.log(ngForm.form.controls);
+    console.log(ngForm);
+    console.log(ngForm.value);
+    // logs value
+    console.log(ngForm.value.name);
+    console.log(ngForm.controls['name'].value);
+    // sets Value dynamically
+    ngForm.controls['name'].setValue('giorgi');
   }
 }
